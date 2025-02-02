@@ -1,0 +1,105 @@
+/* Navbar awal */
+#navbar {
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.8); /* Transparan */
+}
+
+/* Efek blur saat di-scroll */
+.navbar-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6); /* Warna lebih transparan */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section agar memenuhi seluruh layar */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Mengubah warna ikon menjadi biru primer */
+.icon-box i {
+  color: #007bff; /* Warna biru primer */
+  margin-bottom: 10px; /* Jarak ikon dengan teks */
+}
+
+/* Mengubah warna border dan background box */
+.icon-box {
+  padding: 20px;
+  border: 2px solid #007bff; /* Border biru primer */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mengubah efek hover pada box */
+.icon-box:hover {
+  transform: translateY(-10px); /* Efek hover */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2); /* Efek bayangan dengan warna biru primer */
+}
+
+/* Menampilkan fasilitas dengan warna biru */
+.card:hover .fasilitas {
+  display: block; /* Tampilkan fasilitas */
+  transition: display 0.3s ease-in-out;
+}
+/* Memastikan gambar memenuhi lebar kolom */
+#fasilitas img {
+  width: 18rem;
+  height: auto;
+  object-fit: cover; /* Agar gambar tetap proporsional tanpa pecah */
+}
+
+.card .fasilitas {
+  display: none; /* Sembunyikan fasilitas secara default */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(
+    0,
+    123,
+    255,
+    0.9
+  ); /* Background biru dengan transparansi */
+  border-top: 1px solid #007bff; /* Border biru primer */
+}
+
+.accordion-button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.accordion-body {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Warna teks jawaban tetap hitam */
+.accordion-body {
+  color: #000 !important;
+}
+
+/* Transisi halus untuk efek hover */
+.accordion-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
